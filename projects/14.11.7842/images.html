@@ -1,0 +1,98 @@
+<html>
+	<head>
+
+		<link rel="stylesheet" type="text/css" href="css/stylefoto.css" />
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<div id="logo">
+					<h1><a href="#">WATCH GO HEAD</a></h1>
+				</div>
+				<div id="menu">
+					<ul>
+						<li><a href="#" data-nav-section="home">Home</a></li>
+						<li><a href="#" data-nav-section="ticket">Ticket</a></li>
+						<li><a class="active" href="#" data-nav-section="images">Images</a></li>
+						<li><a href="#" data-nav-section="contact">Contact</a></li>
+					</ul>
+					<br class="clearfix" />
+				</div>
+			</div>
+			<div id="splash">
+				<img src="images/soundrenaline.jpg" width="1180" height="350" alt="" />
+			</div>
+			<div id="page">
+				<div id="content">
+					<div class="box">
+						<img class="mySlides" src="images/soundrenaline2.jpg" style="max-width:420" alt="" />
+					
+					<script>
+						var myIndex = 0;
+						carousel();
+
+						function carousel() {
+							var i;
+							var x = document.getElementsByClassName("mySlides");
+							for (i = 0; i < x.length; i++) {
+							   x[i].style.display = "none";  
+							}
+							myIndex++;
+							if (myIndex > x.length) {myIndex = 1}    
+							x[myIndex-1].style.display = "block";  
+							setTimeout(carousel, 2000); // Change image every 2 seconds
+						}
+						</script>
+					</div>
+					<div class="box">
+						<img class="myuoSlides13" src="images/soundrenaline1.jpg" width="500" "hight:567" alt="" />
+						<img class="myuoSlides13" src="images/soundrenaline4.jpg" width="500" "hight:567" alt="" />
+						<img class="myuoSlides13" src="images/soundrenaline6.jpg" width="500" "hight:567" alt="" />
+					
+					<script>
+						var myIndex = 0;
+						carousel();
+
+						function carousel() {
+							var i;
+							var x = document.getElementsByClassName("myuoSlides13");
+							for (i = 0; i < x.length; i++) {
+							   x[i].style.display = "none";  
+							}
+							myIndex++;
+							if (myIndex > x.length) {myIndex = 1}    
+							x[myIndex-1].style.display = "block";  
+							setTimeout(carousel, 2000); // Change image every 2 seconds
+						}
+					</script>
+					</div>
+					<br class="clearfix" />
+				</div>
+				<div id="sidebar2">
+					<div class="box">
+						<img src="images/soundrenaline.jpg" width="315" height="415" alt="" />
+					</div>
+					<div class="box">
+						
+						</ul>
+					</div>
+				</div>
+				<div id="sidebar1">
+					<div class="box">
+						<h3>soundrenaline</h3>
+						<p>
+							soundrenaline Event musik yang disponsori oleh salah satu merek rokok ini adalah salah satu festival musik terbesar di Indonesia yang selalu ditunggu-tunggu tiap tahunnya. Sempat absen pada tahun 2010, hingga kini Soundrenaline telah diadakan selama dua belas kali. Tak seperti festival besar lain yang hanya diadakan di Jakarta, keunikan Soundrenaline adalah event ini berkonsep roadshow atau berpindah-pindah dari satu kota ke kota lainnya..
+						</p>
+					</div>
+					<div class="box">
+						<img src="images/soundrenaline3.jpg" width="315" height="350" alt="" />
+						
+					</div>
+				</div>
+				<br class="clearfix" />
+			</div>
+		</div>
+		<div id="footer">Sponsor By <a href="http://goaheadpeople.com">A Mild</a> Support By <a href="http://amikom.ac.id">Amikom Yogyakarta :)</a>
+		</div>
+	</body>
+</html>

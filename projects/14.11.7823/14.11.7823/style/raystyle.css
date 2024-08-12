@@ -1,0 +1,134 @@
+* {margin:0; padding:0;}
+
+@font-face {
+         font-family: "AKBFONT";
+         src: url('../fonts/AvantGardeLTEL.otf');
+ }
+
+ 
+body {
+	background-image: url('../images/bg/00a.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	font-family:sans-serif;
+	color:white;
+}
+
+#myimg img{
+	width: 100%;
+	position: absolute;
+	transition:1s;
+	visibility: hidden;
+} 
+.navigation {
+	position: absolute;
+	background-color:black; 
+	height:40px; 
+	line-height:40px; 
+	position:relative;
+	width:100%;
+	margin:auto;
+}
+ 
+.navigation ul {
+	list-style:none;
+	font-size: 14px;
+}
+
+.navigation ul li a {
+	float:left; 
+	width:150px; 
+	display:block; 
+	text-align:center; 
+	color:white; 
+	text-decoration:none; 
+	text-transform:uppercase;
+}
+ 
+.navigation ul li a:hover {
+	background-color:#f28ea8; 
+	display:block;
+}
+ 
+.navigation ul li:hover ul {
+	display:block;
+}
+ 
+.navigation ul ul {
+	display:none; 
+	list-style:none; 
+	position:absolute; 
+	background-color:black;
+	left:150px; 
+	top:40px; 
+	width:150px;
+}
+ 
+.navigation ul ul li a {
+	float:none; 
+	display:block;  
+	text-align:center; 
+	width:150px;
+}
+ 
+.navigation ul ul li a:hover {
+	color:white;
+}
+
+
+#time{
+	height: 50px;
+	padding-top: 20px;
+	margin-top: 450px;
+	color:#111;
+	width: 25%;
+	text-align: center;
+	font-size: 25px;
+	background: rgba(255,255,255,0.2);
+	font-family: AKBFONT;
+	float: left;
+}
+
+.hcontent{
+	width: 300px;
+	height:100px;
+	background: rgba(0,0,0,0.1);
+	margin-top: 100px;
+	margin-right: 50px;
+	padding: 20px;
+	font-size: 16px;
+	text-align: justify;
+	color: white;
+	float:right;
+	font-family: AKBFONT;
+}
+.hcontent p{
+	font-size: 25px;
+}
+
+.hcontent2{
+	width: 300px;
+	height:100px;
+	background: rgba(0,0,0,0.1);
+	margin-top: 270px;
+	margin-right: -340px;
+	padding: 20px;
+	font-size: 16px;
+	text-align: justify;
+	color: white;
+	float:right;
+	font-family: AKBFONT;
+}
+.hcontent2 p{
+	font-size: 25px;
+}
+#footer{
+	padding-top: 4px;
+	height:30px;
+	background: rgba(25,25,25,0.1);
+	margin-top: 593px;
+	font-size: 9px;
+	text-align: center;
+	color: #444;
+}

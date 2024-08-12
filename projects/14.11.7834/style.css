@@ -1,0 +1,103 @@
+.header{
+	background-color:#b21617;
+	border-radius:15px 0px;
+}
+
+
+.header-outer{
+	background-color:#b21617;
+	border-radius:15px 0px;
+}
+
+
+.header p{
+	color:red;
+}
+
+
+.content{
+	background-color:white;
+}
+
+
+.article-left{
+	background-color:fafafa;
+	margin:10px 10px;
+	margin-left:40px;
+}
+.article-left a{ text-decoration:none; color:#fc8a7e;}
+.article-left a:hover{ color:red;}
+
+
+.article{
+	background-color:fafafa;
+	margin:10px 10px;
+	margin-left:45px;
+}
+.article a{ text-decoration:none; color:#fc8a7e;}
+.article a:hover{ color:red;}
+
+
+.gallery{
+	background-color:fafafa;
+	margin:10px 10px 10px 62px;
+	padding:10px 10px 10px 10px;
+}
+.gallery img{padding-left: 10px; }
+.gallery a{ text-decoration:none; color:#a47772;}
+.gallery a:hover{ color:#000000;}
+.more{text-align:right;}
+
+
+.article-img{
+	background-color:fafafa;
+	margin:10px 10px 10px 10px;
+	padding:10px 10px 10px 40px;
+}
+
+
+.menu{
+	margin-top:25px;
+	margin-bottom:25px;
+	background-color:#7b160b;
+	float:right;
+	padding-bottom:10px;
+	margin-right:15px;
+	border-radius:15px 0px;
+}
+
+
+nav ul{margin:0; padding:0; list-style:none;}
+.header nav{float:center-right; margin:10px 0 0 0; padding:5px 0; color:#C0BAB6; }
+.header ul{padding:0 20px;}
+.header li{float:left; margin-right:15px; text-transform:uppercase;}
+.header ul img{float:right; margin-right:-10px; margin-bottom:5px;}
+.header img{float:center-left; margin-top:5px; margin-left:15px; padding-bottom:5px;}
+.header h2{float:center; margin-top:5px; margin-left:15px;}
+.header li a{display:block;text-decoration:none; color:#f5f3f3; text-align:center; padding:7px 7px 7px 7px; outline:0; 	border-radius:10px 0px;}
+.header ul li a:focus{color:#ffffff; background-color:#b21617;}
+.header ul li a:hover{color:#ffffff; background-color:#b21617;}
+
+
+
+.us{
+	margin: 80px 10px 80px 10px;
+	font-family: Forte;
+}
+
+
+.slider{
+	margin: 60px 10px 60px 10px;
+	font-family: Forte;
+}
+
+
+.footer{
+	text-transform:uppercase;
+	box-shadow:5px 5px black;
+	color:white;
+	text-align:center;
+	background-color:#b21617;
+	margin-bottom: 10px;
+	border-radius:0px 15px;
+}

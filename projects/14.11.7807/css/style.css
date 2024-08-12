@@ -1,0 +1,241 @@
+@font-face {
+    font-family : Lobster;
+    src : url('../fonts/Lobster.otf');
+}
+@font-face {
+    font-family : OpenSansLightItalic;
+    src : url('../fonts/OpenSans-LightItalic.ttf');
+}
+@font-face {
+    font-family : OpenSansRegular;
+    src : url('../fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family : OpenSansLight;
+    src : url('../fonts/OpenSans-Light.ttf');
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: OpenSansLight;
+}
+.container {
+    width: 960px;
+    height: auto;
+    margin: auto;
+}
+.clear {clear: both;}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: #21C42D;
+    position:fixed;
+
+}
+.webtitle {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.webtitle h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 50px;
+    font-family: Lobster;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+}
+/* navigasi */
+nav {
+    height: 50px;
+    float: right;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav ul li {
+    float: left;
+    display: block;
+}
+nav ul li a {
+    line-height: 50px;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    height: 50px;
+    font-family: OpenSansLight;
+    position:relative;
+    display:block;
+    text-transform:uppercase;
+}
+nav ul li:hover a {
+    text-decoration: underline;
+}
+
+/* banner */
+.banner {
+    height: 630px;
+    background-color: #2CE839;
+}
+.banner .text {
+    margin-top: 140px;
+    float: left;
+    width: 40%;
+    color: #fff;
+}
+
+.banner .text h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 72px;
+    font-family: OpenSansLight;
+    font-weight: lighter;
+}
+.banner .text p {
+    line-height: 26px;
+    font-size: 20px;
+    margin-bottom: 50px;
+    font-family: OpenSansLightItalic;
+}
+.banner .text a {
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    font-family: OpenSansLight;
+    transition: ease .4s;
+}
+.banner .text a:hover {
+    background: #70A9F1;
+}
+
+.banner .text2 {
+    margin-top: 140px;
+    float: right;
+    width: 70%;
+    color: #fff;
+}
+
+.banner .text2 p {
+    line-height: 18px;
+    font-size: 18px;
+    margin-bottom: 50px;
+    font-family: OpenSansLightItalic;
+}
+
+.banner .text2 a {
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    font-family: OpenSansLight;
+    transition: ease .4s;
+}
+.banner .text2 a:hover {
+    background: #70A9F1;
+}
+
+.banner .video {
+    width: 58%;
+    float: right;
+    margin-top: 150px;
+}
+.banner .picture {
+    float: left;
+    margin-right: 10px;
+    margin-top: 150px;
+}
+.banner .video video {
+    width: 100%;
+}
+.banner .picture img {
+    width: 250px;
+}
+
+
+/* konten */
+.konten {
+    margin-top: 0px;
+}
+/* konten sepertiga */
+.sepertiga {
+    width: 298px;
+    margin-top: 100px;
+    margin-left: 10px;
+    margin right: 10px;
+    float: left;
+    margin-bottom: 50px;
+    border: 1px solid #eee;
+    padding-bottom: 20px;
+    border-bottom: 5px solid #fff;
+}
+.img-post-thumb {
+    width: 298px;
+    height: 210px;
+    opacity: .8;
+    transition: ease .5s;
+}
+.sepertiga:hover .img-post-thumb {
+    opacity: 1;
+}
+.sepertiga h2 {
+    margin: 0 10px;
+}
+.sepertiga a {
+    margin: auto 10px;
+    text-decoration: none;
+}
+.sepertiga a:hover {
+    text-decoration: underline;
+    color: #3479cf;
+}
+.sepertiga p {
+    margin: 10px;
+}
+.some-info-post b {
+    color: #black;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-left: 25px;
+}
+.some-info-post .time-info-post:before {
+    margin-left: -15px;
+    content: url('../img/calendar.png');
+    margin-right: 5px;
+    opacity: .5;
+}
+
+
+/* footer */
+.footer {
+    width: 100%;
+    padding-top: 20px;
+    background-color: #2d2d2d;
+    color: #888;
+}
+.footer .about {
+    width: 60%;
+    float: left;
+}
+.footer .about img {
+    float: left;
+    margin-right: 10px;
+    width: 50px;
+}
+.footer .contact {
+    width: 35%;
+    float: right;
+}
+.footer .copyright {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #222;
+    font-size: 20px;
+}
+.footer .copyright b {
+    font-family: Lobster;
+}

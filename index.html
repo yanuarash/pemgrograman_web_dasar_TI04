@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A brief description of the page" />
+    <meta name="author" content="Your Name" />
+    <title>Pemrograman Web Dasar 2015-2016 TI-04</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- <script src="script.js" defer></script> Link to your JavaScript file -->
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div id="card-container" class="p-4 place-items-center">
+      <!-- Cards will be injected here by JavaScript -->
+      <h5 class="my-5 text-xl">Pemrograman Web Dasar 2015-2016 | TI</h5>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const names = [
+          {
+            name: "Fathul Ma`arif Jufri",
+            amikomUrl: "https://amikomone.my.id/mhs/7805-fathul-maarif-jufri",
+            nim: "14.11.7805",
+            url: "projects/14.11.7805/index.html",
+          },
+          {
+            name: "Haswanda Imawan",
+            amikomUrl: "https://amikomone.my.id/mhs/7807-haswanda-imawan",
+            nim: "14.11.7807",
+            url: "projects/14.11.7807/index.html",
+          },
+          {
+            name: "Anggun Prasanti",
+            amikomUrl: "https://amikomone.my.id/mhs/7809-anggun-prasanti",
+            nim: "14.11.7809",
+            url: "projects/14.11.7809/index.html",
+          },
+          {
+            name: "Risqi Ramadhan",
+            amikomUrl: "",
+            nim: "14.11.7813",
+            url: "projects/14.11.7813/index.html",
+          },
+          {
+            name: "Dio Alif Utama",
+            amikomUrl: "https://amikomone.my.id/mhs/7817-dio-alif-utama",
+            nim: "14.11.7817",
+            url: "projects/14.11.7817/index.html",
+          },
+          {
+            name: "I Komang Wahyu Dyatmika",
+            amikomUrl:
+              "https://amikomone.my.id/mhs/7818-i-komang-wahyu-dyatmika",
+            nim: "14.11.7818",
+            url: "projects/14.11.7818/index.html",
+          },
+          {
+            name: "Juliana Indri Rosa",
+            amikomUrl: "https://amikomone.my.id/mhs/7819-juliana-indri-rosa",
+            nim: "14.11.7819",
+            url: "projects/14.11.7819/beranda.html",
+          },
+          {
+            name: "Andri Rahmat Fitriantoro",
+            amikomUrl:
+              "https://amikomone.my.id/mhs/7820-andri-rahmat-fitriantoro",
+            nim: "14.11.7820",
+            url: "projects/14.11.7820/home.html",
+          },
+          {
+            name: "Ray Fanathagama",
+            amikomUrl: "https://amikomone.my.id/mhs/7823-ray-fanathagama",
+            nim: "14.11.7823",
+            url: "projects/14.11.7823/14.11.7823/index.html",
+          },
+          {
+            name: "Khairul Azhar",
+            amikomUrl: "https://amikomone.my.id/mhs/7824-khairul-azhar",
+            nim: "14.11.7824",
+            url: "projects/14.11.7824/index.html",
+          },
+          {
+            name: "Kurniawan Adhi Kusumajati",
+            amikomUrl:
+              "https://amikomone.my.id/mhs/7828-kurniawan-adhi-kusumajati",
+            nim: "14.11.7828",
+            url: "projects/14.11.7828/index.html",
+          },
+          {
+            name: "Sintaya Sari",
+            amikomUrl: "https://amikomone.my.id/mhs/7829-sintaya-sari",
+            nim: "14.11.7829",
+            url: "projects/14.11.7829/home.html",
+          },
+          {
+            name: "Adinda Amaliyah",
+            amikomUrl: "https://amikomone.my.id/mhs/7831-adinda-amaliyah",
+            nim: "14.11.7831",
+            url: "projects/14.11.7831/index.html",
+          },
+          {
+            name: "Aditya Benny Wicaksana",
+            amikomUrl:
+              "https://amikomone.my.id/mhs/7834-aditya-benny-wicaksana",
+            nim: "14.11.7834",
+            url: "projects/14.11.7834/index.html",
+          },
+          {
+            name: "Najib Bagus Dirgantara",
+            amikomUrl:
+              "https://amikomone.my.id/mhs/7836-najib-bagus-dirgantara",
+            nim: "14.11.7836",
+            url: "projects/14.11.7836/index.html",
+          },
+          {
+            name: "Dwi Santoso",
+            amikomUrl: "https://amikomone.my.id/mhs/7837-dwi-santoso",
+            nim: "14.11.7837",
+            url: "projects/14.11.7837/index.html",
+          },
+          {
+            name: "Caraka Aji Pranata",
+            amikomUrl: "https://amikomone.my.id/mhs/7838-caraka-aji-pranata",
+            nim: "14.11.7838",
+            url: "projects/14.11.7838/index.html",
+          },
+          {
+            name: "Helmy Nur Fa`iz",
+            amikomUrl: "https://amikomone.my.id/mhs/7842-helmy-nur-faiz",
+            nim: "14.11.7842",
+            url: "projects/14.11.7842/home.html",
+          },
+          {
+            name: "Anggadestri Ulyadi",
+            amikomUrl: "https://amikomone.my.id/mhs/7847-anggadestri-ulyadi",
+            nim: "14.11.7847",
+            url: "projects/14.11.7847/index.html",
+          },
+          {
+            name: "Yonanda Dwi Pratama",
+            amikomUrl: "https://amikomone.my.id/mhs/7849-yonanda-dwi-pratama",
+            nim: "14.11.7849",
+            url: "projects/14.11.7849/index.html",
+          },
+          {
+            name: "Fery Andriyani",
+            amikomUrl: "https://amikomone.my.id/mhs/7850-fery-andriyani",
+            nim: "14.11.7850",
+            url: "projects/14.11.7850/index.html",
+          },
+          {
+            name: "Riswanti Rahmawati Putri",
+            amikomUrl:
+              "https://amikomone.my.id/mhs/7851-riswanti-rahmawati-putri",
+            nim: "14.11.7851",
+            url: "projects/14.11.7851/index.html",
+          },
+          {
+            name: "I Ketut Harrys Kumaradhana",
+            amikomUrl:
+              "https://amikomone.my.id/mhs/7853-i-ketut-harrys-kumaradhana",
+            nim: "14.11.7853",
+            url: "projects/14.11.7853/Home.html",
+          },
+          {
+            name: "Didik Mardianto",
+            amikomUrl: "https://amikomone.my.id/mhs/7854-didik-mardianto",
+            nim: "14.11.7854",
+            url: "projects/14.11.7854/index.html",
+          },
+          {
+            name: "Mohammad Yanuar Ash-shidieqy",
+            amikomUrl:
+              "https://amikomone.my.id/mhs/7855-mohammad-yanuar-ash-shidieqy",
+            nim: "14.11.7855",
+            url: "projects/14.11.7855/index.html",
+          },
+          {
+            name: "Dimas Dwi Nugroho",
+            amikomUrl: "https://amikomone.my.id/mhs/7857-dimas-dwi-nugroho",
+            nim: "14.11.7857",
+            url: "projects/14.11.7857/index/index.html",
+          },
+          {
+            name: "Fajar Januriawan",
+            amikomUrl: "https://amikomone.my.id/mhs/7858-fajar-januriawan",
+            nim: "14.11.7858",
+            url: "projects/14.11.7858/index.html",
+          },
+          {
+            name: "Amirudin Khorul Huda",
+            amikomUrl: "https://amikomone.my.id/mhs/7859-amirudin-khorul-huda",
+            nim: "14.11.7859",
+            url: "projects/14.11.7859/index.html",
+          },
+          {
+            name: "Ahmad Teezar Andraneda",
+            amikomUrl:
+              "https://amikomone.my.id/mhs/7860-ahmad-teezar-andraneda",
+            nim: "14.11.7860",
+            url: "projects/14.11.7860/newww.html",
+          },
+          {
+            name: "Bowo Christianto",
+            amikomUrl: "https://amikomone.my.id/mhs/7861-bowo-christianto",
+            nim: "14.11.7861",
+            url: "projects/14.11.7861/index.html",
+          },
+          {
+            name: "Azwar Ramadhan",
+            amikomUrl: "https://amikomone.my.id/mhs/7865-azwar-ramadhan",
+            nim: "14.11.7865",
+            url: "projects/14.11.7865/index.html",
+          },
+          {
+            name: "Arif Apriyatno",
+            amikomUrl: "https://amikomone.my.id/mhs/7867-arif-apriyatno",
+            nim: "14.11.7867",
+            url: "projects/14.11.7867/index.html",
+          },
+          {
+            name: "Faisal Achmad Dwi Cahyono",
+            amikomUrl:
+              "https://amikomone.my.id/mhs/7868-faisal-achmad-dwi-cahyono",
+            nim: "14.11.7868",
+            url: "projects/14.11.7868/index.html",
+          },
+        ];
+        const cardContainer = document.getElementById("card-container");
+
+        names.forEach(({ name, amikomUrl, nim, url }) => {
+          // Create a card element
+          const card = document.createElement("a");
+          card.href = url;
+          card.target = "_blank"; // Open in new tab
+          card.className =
+            "block max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden mb-4 p-4";
+
+          // Create the card content
+          card.innerHTML = `
+                    <h2 class="text-xl font-bold text-center">${name}</h2>
+                    <h2 class="text-base text-center">${nim}</h2>
+
+                    <div class="grid grid-cols-2 gap-4 place-items-center mt-3">
+                    <a href="${url}" target="_blank" class="hover:text-red-500 hover:scale-110 transition-transform transition-colors duration-300">
+                        <i class="fa-solid fa-globe fa-2x"></i>
+                    </a>
+                    <a href="${amikomUrl}" target="_blank" class="hover:brightness-125 hover:rotate-12 transition-transform transition-filter duration-300">
+                        <img src="amikom.svg" alt="SVG Example" width="40" height="40">
+                    </a>
+                </div>
+                `;
+
+          // Append the card to the container
+          cardContainer.appendChild(card);
+        });
+      });
+    </script>
+  </body>
+</html>

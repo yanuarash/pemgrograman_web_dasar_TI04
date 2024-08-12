@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> Marvel Cinematic Universe</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
+		<link rel="stylesheet" href="bootstrap/js/jquery.min.js">
+		<link rel="icon" href="images/favicon.ico">
+		<script language="javascript" type="text/javascript">
+		function resizeIframe(obj) {
+		obj.style.height = 0;
+		obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+		}
+		function loadFrame(){
+		var home=document.getElementById('home');
+			home.src="home.html";
+		}
+		</script>
+	</head>
+<body onload="loadFrame()">
+	<div class="container">
+	<div class="row header-outer navbar-default">
+	<div class="header col-md-12" >
+				<img src="images/mainlogo.gif" width="20%">
+				<img src="images/mainlogo2.gif" width="20%">
+				<div class="menu col-md-6 ">
+				<nav>
+				<ul>
+					<li><a href="home.html" target="home">Home</a></li>
+					<li><a href="movies.html" target="home">Movies</a></li>
+					<li><a href="photos.html" target="home">Gallery</a></li>
+					<li><a href="us.html" target="home">About Us</a></li>
+					<img src="images/marvel-cinematic-universe.gif" width="10%">
+				</ul>
+				</nav>
+				</div>
+	</div>
+	</div>
+	
+	<div class="row">
+		<div class="content col-md-12">
+		<iframe id="home" frameborder='0' scrolling='no' onLoad="resizeIframe(this)" width="100%" name="home"></iframe>
+		</div>
+	</div>	
+	<div class="row">
+		<div class="footer col-md-12">
+			Marvel Cinematic Universe
+			<br>Copyright &copy MARVEL
+		</div>
+	</div>
+	</div>
+</body>
+</html>

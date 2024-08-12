@@ -1,0 +1,101 @@
+#header{
+	background-image: url('vans3.jpg');
+	background-repeat:no-repeat;
+    color:white;
+    text-align:center;
+    padding:0px;
+	height:800px;
+	width:100%;
+	line-height:300px;
+	font-size:30px;
+	font-family:Aquatico;
+	
+}
+
+#nav ul{
+	margin:0;
+	padding:0;
+	
+}
+
+#nav li{
+	list-style:none;
+	float:left;
+	width:25%;
+	text-align:center;
+	background-color:black;
+	font-size:24px;
+	height:40px;
+	line-height:40px;
+	border-right:1px solid black;
+	box-sizing:border-box;
+	font-family:Calibri;
+}
+	
+#nav li:last-child{
+		border:none;
+}
+
+#nav a {
+	text-decoration:none;
+	color:white;
+}
+#nav a:hover {
+	text-decoration:none;
+	color:gray;
+}
+#home{
+	height:1000px;
+	width:100%;
+	padding-bottom:40px;
+	
+}
+#text2{
+	font-family:calibri;
+	padding-left:300px;
+	padding-top:300px;
+	
+}
+
+#text1{
+	font-family:calibri;
+	padding-left:300px;
+	padding-top:300px;
+}
+
+#models{
+	font-family:MS reference sans serif;
+	padding-left:100px;
+	
+}
+
+#text1{
+	padding-left:100px;
+	padding-top:100px;
+	padding-right:100px;
+	text-align:justify;
+}
+
+#history{
+	padding-top:100px;
+	
+}
+#sizecharts{
+	padding-left:500px;
+	padding-top:200px;
+	
+}
+
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+	margin-top:200px;
+    padding-top:5px;
+	height:50px;
+	font-family:Aquatico;
+}
+
+
+

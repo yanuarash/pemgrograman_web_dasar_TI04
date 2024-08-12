@@ -1,0 +1,180 @@
+body{
+	padding-top:0px;
+	background-color: #003459;
+}
+
+nav{
+	background-color: white;
+}
+
+@font-face {
+	font-family: "neuton-regular";
+	src: url("neuton-regular.ttf");
+}
+@font-face	{
+	font-family: "neuton-italic";
+	src: url("Neuton-Italic.ttf");
+}
+@font-face{
+	font-family: "neuton-bold";
+	src: url("Neuton-Extrabold.ttf");
+}
+@font-face{
+	font-family: "typoslab-bold";
+	src: url("TypoSlab_bold_demo.otf");
+}
+#home{
+	background-color: white;
+}
+.tnav, .nav, .nav-tabs{
+	border-bottom: 0;
+	height: 28px;
+}
+
+.navbar-nav > li > a, .navbar-brand{
+	padding-top: 4px;
+	padding-bottom: 0;
+	height: 28px;
+}
+.navbar, .navbar-inverse, .navbar-fixed-top {
+	background-color: #003459;
+	border-bottom: 0;
+	color: blue;
+	font-family: typoslab-bold;
+	font-size: 25px;
+	margin-bottom: 0;
+	min-height: 57px;
+}
+
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a:hover{
+	color: white;
+	background-color: #007EA7;
+	border-color: #007EA7;
+
+}
+.nav-tabs > li, .nav-pills > li {
+    float: none;
+    display: inline-block;
+    *display: inline; /* ie7 fix */
+     zoom:1; /* hasLayout ie7 trigger */
+}
+
+.nav-tabs, .nav-pills {
+    text-align: center;
+}
+
+.nav a{
+	color: white;
+}
+
+.nav a:hover{
+	color: #003459;
+}
+
+.nav a:focus{
+	color: #003459;
+}
+
+#home img{
+	position: relative;
+	width: 100%;
+}
+
+#home > h1{
+	position: absolute;
+	top: 50%; 
+    left: 0; 
+    width: 100%;
+    text-align: center;
+    font-size: 85px; 
+   	font-family: neuton-bold;
+}
+
+#home > p{
+	position: absolute;
+	top: 62%; 
+    left: 0; 
+    width: 100%;
+    text-align: center;
+    font-size: 28px; 
+    font-family: neuton-italic;
+}
+
+.jumbotron{
+	margin-bottom: 0;
+	background-color: #003459;
+	color: white;
+	font-family: neuton-regular;
+}
+.jumbotron > p{
+	text-align: center;
+	margin-left: 15%;
+	margin-right: 15%;
+	font-family: neuton-regular;
+}
+
+.jumbotron > h2{
+	font-size: 30px;
+	text-align: center;
+	font-family: neuton-regular;
+	color: white;
+}
+footer{
+	font-family: neuton-regular;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 3px;
+	margin-bottom: 0;
+	height: 38px;
+}
+.jumbotron > h3{
+	font-size: 30px;
+	text-align: center;
+	font-family: neuton-regular;
+}
+
+
+.item-active{
+	max-height: 700px;
+}
+
+.item{
+	max-height: 700px;
+}
+.carousel-control{
+	max-height: 700px;
+}
+
+#menu2 .jumbotron{
+	text-align: center;
+	font-family: neuton-regular;
+}
+
+#menu2 img{
+	position: relative;
+	width: 100%;
+}
+
+#menu2 > h1{
+	position: absolute;
+	top: 50%; 
+    left: 0; 
+    width: 100%;
+    text-align: center;
+    font-size: 85px; 
+   	font-family: neuton-bold;
+   	color: white;
+}
+
+#menu2 > p{
+	position: absolute;
+	top: 62%; 
+    left: 0; 
+    width: 100%;
+    text-align: center;
+    font-size: 28px; 
+    font-family: neuton-italic;
+    color: white;
+}

@@ -1,0 +1,86 @@
+<html>
+<head>
+  <title>Alam Jogjaku</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Alam<span class="logo_colour">Jogjaku</span></a></h1>
+          <h2>Benar-benar Kota yang Istimewa</h2>
+        </div>
+      </div>
+      <nav>
+        <ul class="sf-menu" id="nav">
+          <li class="selected"><a href="index.html">Home</a></li>          
+          <li><a href="#">Montain</a>
+            <ul>
+              <li><a href="gunung_merapi.html">Mt. Merapi</a></li>
+              <li><a href="gunung_merbabu.html">Mt. Merbabu</a></li>
+              <li><a href="gunung_nglanggeran.html">Mt. Nglanggeran</a></li>
+            </ul>
+          </li>
+		  <li><a href="#">Beach</a>
+            <ul>
+              <li><a href="pantai_parangtitis.html">Parangtitis</a></li>
+              <li><a href="pantai_baron.html">Baron</a></li>
+              <li><a href="pantai_poktunggal.html">Pok Tunggal</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About Me</a></li>
+		  <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="gallery">
+          <ul class="images">
+            <li class="show"><img width="450" height="450" src="images/merapi1.jpg" alt="photo_one" /></li>
+            <li><img width="450" height="450" src="images/merbabu1.jpg" alt="photo_two" /></li>
+            <li><img width="450" height="450" src="images/nglanggeran1.jpg" alt="photo_three" /></li>
+            <li><img width="450" height="450" src="images/parangtitis2.jpg" alt="photo_four" /></li>
+            <li><img width="450" height="450" src="images/merbabu5.jpg" alt="photo_five" /></li>
+          </ul>
+        </div>
+      </div>
+      <div id="content">
+        <h1>Selamat datang di Alam_Jogjaku</h1>
+        <p>Kami menyediakan informasi - informasi tempat pemandangan alam yang ada di Daerah Istimewa Yogyakarta, yang akan memanjakan mata, hati dan pikiran Anda.</p>
+        <h3>Berita Terbaru:</h3>
+        <ul>
+          <li><a href="gunung_nglanggeran.html">Gunung Nglanggeran</a></li>
+          <li><a href="gunung_merbabu.html">Gunung Merbabu</a></li>
+		  <li><a href="gunung_merapi.html">Gunung Merapi</a></li>
+          <li><a href="pantai_poktunggal.html">Pantai Pok Tunggal</a></li>
+          <li><a href="pantai_baron.html">Pantai Baron</a></li>
+		  <li><a href="pantai_parangtitis.html">Pantai Parangtitis</a></li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <p>Copyright &copy; AlamJogjaku 2016 </p>
+    </footer>
+  </div>
+  <p>&nbsp;</p>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="js/image_fade.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+</html>

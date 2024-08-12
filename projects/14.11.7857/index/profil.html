@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Senat Mahasiswa</title>
+	<!-- Bootstrap -->
+	<link href="../data/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="../data/assets/css/style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../data/assets/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="../data/assets/media/image/logosenat.png">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../data/assets/js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../data/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        (function ($) {
+				$(document).ready(function(){
+			//hide
+			$(".mini-nav").hide();
+			//fade
+			$(function(){
+				$(window).scroll(function(){
+					//set distance scroll
+					if($(this).scrollTop()>100){
+						$('.mini-nav').fadeIn();
+					}else{
+						$('.mini-nav').fadeOut();
+					}
+				});
+			});
+		});
+        }(jQuery));
+    </script>
+    <!--share this 
+    <script type="text/javascript">var switchTo5x=true;</script>
+	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+	<script type="text/javascript">stLight.options({publisher: "7e70f70d-cabb-4ff1-8990-601ebb7543e9", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>-->
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-static-top">
+		<div class="container">
+			<!--navbar collapse-->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="http://data/">
+					<img src="../data/assets/media/image/logo-fossil.png">
+				</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="navbar-collapse-1">
+    <form class="navbar-form navbar-right" role="search" action="http://data/search" method="post">
+		<div class="input-group">	
+			<input type="text" class="form-control" placeholder="Pencarian" name="keyword">
+			<span class="input-group-btn">
+                <button class="btn btn-default" type="button"><i class='fa fa-search'></i> </button>
+            </span>
+        </div>
+    </form>
+    <ul class="nav navbar-nav navbar-right">
+		<li class="active"><a href="http://data/">Beranda <span class="sr-only">(current)</span></a></li>
+		<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Profil<span class="caret"></span></a>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="http://data/profil">Sejarah</a></li>
+				<li><a href="http://data/pengurus">Pengurus</a></li>
+			</ul>
+		</li>
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Artikel <span class="caret"></span></a>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="http://data/article/berita">Berita</a></li>
+				<li><a href="http://data/article/tutorial">Tutorial</a></li>
+				<li class="divider"></li>
+				<li><a href="http://data/article/agenda">Agenda</a></li>
+			</ul>
+		<li>
+		<li><a href="http://data/project">Project</a></li>
+		<li><a href="http://data/kontak">Hubungi Kami</a></li>
+    </ul>
+	</div>
+</div>	</nav>
+
+	<nav class="mini-nav navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<!--navbar collapse-->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">
+					<img src="../data/assets/media/image/logo-fossil.png">
+				</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+    <form class="navbar-form navbar-right" role="search" action="http://data/search" method="post">
+		<div class="input-group">	
+			<input type="text" class="form-control" placeholder="Pencarian" name="keyword">
+			<span class="input-group-btn">
+                <button class="btn btn-default" type="button"><i class='fa fa-search'></i> </button>
+            </span>
+        </div>
+    </form>
+    <ul class="nav navbar-nav navbar-right">
+		<li class="active"><a href="http://data/">Beranda <span class="sr-only">(current)</span></a></li>
+		<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Profil<span class="caret"></span></a>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="http://data/profil">Sejarah</a></li>
+				<li><a href="http://data/pengurus">Pengurus</a></li>
+			</ul>
+		</li>
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Artikel <span class="caret"></span></a>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="http://data/article/berita">Berita</a></li>
+				<li><a href="http://data/article/tutorial">Tutorial</a></li>
+				<li class="divider"></li>
+				<li><a href="http://data/article/agenda">Agenda</a></li>
+			</ul>
+		<li>
+		<li><a href="http://data/project">Project</a></li>
+		<li><a href="http://data/kontak">Hubungi Kami</a></li>
+    </ul>
+	</div>
+</div>        </div>
+	</nav>
+
+			<div class="jumbotron">
+			<!-- Carousel -->
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			
+				    <!--NAV SECTION -->
+    <header id="header-nav" role="banner">
+        <div id="navbar" class="navbar navbar-default">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#" position="center">Senat Mahasiswa</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav flot-nav">
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="profil.html"> Profil</a></li>
+                    <li><a href="agenda.html">Agenda</a></li>
+                    <li><a href="divisi.html"> Divisi</a></li>
+                    <li><a href="struktursema.html">Strukutur Organisasi</a></li>
+                    <li><a href="kontak.html"> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--END NAV SECTION -->
+    <!--SLIDE CAROUSEL SECTION -->
+		<div>
+                    <div class="ndas" >
+                        <img src="../data/assets/media/image/ndass.png" width="100%" height="100%"/>
+                     
+                    </div>
+         </div>        
+	
+	
+    <!--END SLIDE CAROUSEL SECTION -->
+				
+	
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+<!-- Ngatur Background Body -->
+<div class="panel">
+<!-- coba -->
+
+
+	<div class="panel panel-default">
+	<div class="container">  
+	<center><img src="../data/assets/media/image/logosenat.png"></center>
+<h3>Profil SEMA</h3><p></p>
+<div align="justify">
+Senat Mahasiswa yang selanjutnya disingkat SEMA, merupakan organisasi tertinggi di dalam struktur organisasi Lembaga Mahasiswa (LM) STMIK Amikom Yogyakarta. 
+<p>
+Senat Mahasiswa STMIK Amikom Yogyakarta didirikan pada tanggal 19 Desember 1998. SEMA adalah Lembaga Legislatif yang anggotanya terdiri dari  Senator Kelas (2 orang perwakilan kelas yang masih aktif) ataupun perwakilan dari Organisasi Mahasiswa STMIK Amikom Yogyakarta. 
+</p>
+<p>
+Sema sendiri di ketuai oleh ketua umum dengan didampingi sekretaris umum dan di bantu oleh 5 komisi yaitu kesekretariatan, keuangan, aspirasi, pemberdaya organisasi (PBO), dan advokasi. 
+</p>
+<p>
+Fungsi utama dari SEMA sendiri adalah Controling, Legalitas, dan Bageting. Yang dimaksud dengan controling adalah SEMA berfungsi untuk mengontrol seluruh kegiatan yang dilaksanakan oleh organisasi mahasiswa yang berada di STMIK Amikom Yogyakarta. Sedangkan Legalitas, SEMA bertindak sebagai badan legislatif yang melegalkan seluruh kegiatan organisasi mahasiswa yang akan diadakan oleh organisasi tersebut sebelum disetujui oleh Pembantu Ketua III STMIK Amikom Yogyakarta. Yang terakhir adalah Bageting, SEMA mempunyai fungsi untuk mengatur keuangan dari setiap organisasi mahasiswa yang ada di STMIK Amikom Yogyakarta.
+</p>
+<p>
+Selain itu, SEMA juga mempunyai fungsi sebagai penampung aspirasi seluruh mahasiswa STMIK Amikom Yogyakarta yang mana semua aspirasi yang masuk akan dipilah dan di musyawarahkan untuk diajukan ke pihak Lembaga
+		
+		
+		
+	</div> </div>	
+		
+		
+
+	<div id="sikil">
+	   	    <div class="container">
+            <div class="col-md-4">
+                <h3 class="bg-f-title">Tentang Kami</h3>
+               Senat Mahasiswa Amikom <br> Sekretariat : Amikom Yogyakarta Gedung BSC lantai 1<br><br>
+            </div>
+            <div class="col-md-4">
+                <h3 class="bg-f-title">Links</h3>
+                <a class="a-text" href="#"><i class="fa fa-facebook-official fa-2x"></i></a>
+                <a class="a-text" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                <a class="a-text" href="#"><i class="fa fa-google fa-2x"></i></a>
+                <a class="a-text" href="http://amikom.ac.id/" target="_blank"><div id="logo-amikom"></div></a>
+            </div>
+            <div class="col-md-4    ">
+                 <h3 class="bg-f-title">Divisi</h3>
+                    <a class="a-text" href="http://data/">Ketua <span class="sr-only">(current)</span></a>
+                    <a class="a-text" href="http://data/profil">Sekum</a>
+                    <a class="a-text" href="http://data/article/berita">Kesekretariatan</a>
+                    <a class="a-text" href="http://data/article/tutorial">Bendahara</a>
+                    <a class="a-text" href="http://data/article/agenda">Advokasi</a>
+                    <a class="a-text" href="http://data/project">Aspirasi</a>
+                    <a class="a-text" href="http://data/kontak">PBO</a>
+                  <span><a id="top" href="#"><i class="fa fa-chevron-up"></i></a></span>
+            </div>
+    </div>		
+	</div>
+	<div id="foot">
+	   <div class="container">
+	    <div class="col-md-12" align="center">Copyright &copy; Senat Mahasiswa 2016 | STMIK Amikom Yogyakarta</div>  
+	   </div>
+	</div>   
+	
+	
+</html>

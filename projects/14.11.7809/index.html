@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<!-- Judul Halaman Web -->
+		<title>Food and Fun</title>
+		<!-- tag meta dengan name viewport berguna untuk mendeteksi ukuran layar dari suatu device -->
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!-- tag meta dengan name author berguna untuk memberitahukan identitas kepemilikan website -->
+		<meta name="author" content="Anggun Prasanti">
+		<!-- tag meta dengan name description berguna untuk mendeskripsikan halaman website -->
+		<meta name="description" content="Makanan Anggun">
+		<!-- tag meta dengan name keyword berguna untuk memberitahukan search engine bahwa keyword yang sudah dimasukkan berkaitan dengan konten -->
+		<meta name="keyword" content="makanan,foods,anggun">
+		<!-- import library jquery -->
+		<script src="js/jquery-1.12.4.min.js" language="javascript"></script>
+		<!-- import library materialize js -->
+		<script src="js/materialize.min.js" language="javascript"></script>
+		<!-- import library css materializecss -->
+		<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+		<!-- import library css custom -->
+		<link rel="stylesheet" type="text/css" href="css/custom.css">
+		<!-- import library font awesome -->
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<!-- Import icon dari google -->
+		<link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- end -->
+		<script language="javascript">
+			// Inisialisasi kode javascript pada website
+			$(document).ready(function(){
+				$('.slider').slider({full_width: true});
+				$(".button-collapse").sideNav();
+				$("#food").click(function(){
+					$("iframe").attr("src","pages/foods.html");
+				});
+				$("#true-stories").click(function(){
+					$("iframe").attr("src","pages/true-stories.html");
+				});
+				$("#health").click(function(){
+					$("iframe").attr("src","pages/health.html");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class="navbar-fixed">
+				<nav>
+					<div class="nav-wrapper grey darken-3">
+						<div class="container">
+							<a href="#" class="brand-logo"><i class="material-icons prefix grey-text text-lighten-4">perm_identity</i></a>
+							<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+							<ul id="nav-mobile" class="right hide-on-med-and-down">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="#" id="food">Foods</a></li>
+								<li><a href="#" id="true-stories">True Stories</a></li>
+								<li><a href="#"><i class="material-icons">search</i></a></li>
+							</ul>
+							<ul id="mobile-demo" class="side-nav">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="#" id="food">Foods</a></li>
+								<li><a href="#" id="true-stories">True Stories</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<iframe src="pages/home.html"></iframe>
+		</main>
+	</body>
+</html>
